@@ -15,8 +15,7 @@ function ProductList() {
   const loadCars = async () => {
     try {
       const response = await carService.getAllCars()
-      console.log('Cars response:', response)
-      // Update this line based on your API response structure
+    
       const carsData = Array.isArray(response.data) ? response.data : response.data.cars || []
       setCars(carsData)
     } catch (err) {
