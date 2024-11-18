@@ -3,7 +3,7 @@ import { API_URL, getAuthHeaders } from './config'
 export const authService = {
   async login(credentials) {
     try {
-      console.log('Attempting login with:', credentials)
+      
       const response = await fetch(`${API_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -17,7 +17,7 @@ export const authService = {
       }
       
       const data = await response.json()
-      console.log('Login response:', data) // Debug log
+      
       
       // Store the token exactly as received from the backend
       if (data.token) {
