@@ -3,7 +3,6 @@ import { API_URL, getAuthHeaders } from './config'
 export const carService = {
     async getAllCars() {
       try {
-        console.log('Fetching cars with headers:', getAuthHeaders()) // Debug log
         const response = await fetch(`${API_URL}/api/cars`, {
           headers: getAuthHeaders(),
           credentials: 'include'
