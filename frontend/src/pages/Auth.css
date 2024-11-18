@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Tesla';
+    src: url('../assets/fonts/TESLA.ttf') format('truetype');
+  }
+  
+  .tesla-font {
+    font-family: 'Tesla', sans-serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .bg-black {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  input:hover {
+    border-color: #4a5568;
+  }
